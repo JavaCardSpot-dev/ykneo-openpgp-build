@@ -5,12 +5,6 @@ information_source: **IMPORTANT: This repository is used for class [PV204 Securi
 
 [![Build Status](https://travis-ci.org/JavaCardSpot-dev/ykneo-openpgp-build.svg?branch=master)](https://travis-ci.org/JavaCardSpot-dev/ykneo-openpgp-build)
 
-[IMPORTANT]
-====
-Yubico has learned of a security issue with the OpenPGP Card applet project that is used in the YubiKey NEO. This vulnerability applies to you only if you are using OpenPGP, and you have the OpenPGP applet version 1.0.9 or earlier.
-link:https://developers.yubico.com/ykneo-openpgp/SecurityAdvisory%202015-04-14.html[SecurityAdvisory 2015-04-14]
-====
-
 This project implement the OpenPGP card functionality used on the
 YubiKey NEO device that is sold by Yubico.
 
