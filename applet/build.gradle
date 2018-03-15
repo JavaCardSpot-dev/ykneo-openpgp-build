@@ -35,7 +35,21 @@ dependencies {
     testCompile 'org.testng:testng:6.1.1'
 
     testCompile group: 'com.klinec', name: 'javacard-tools', version: '0.0.1', transitive: false
-    // jcardsim 'com.licel:jcardsim:3.0.4'
+    jcardsim 'com.licel:jcardsim:3.0.4'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'project/applet/src'
+        }
+    }
+
+    test {
+        java {
+            srcDir 'project/test/test'
+        }
+    }
 }
 
 test {
