@@ -53,7 +53,7 @@ sourceSets {
 }
 
 test {
-    useTestNG()
+    //useTestNG()
     jvmArgs '-noverify'
 }
 
@@ -81,14 +81,14 @@ javacard {
 
         //noinspection GroovyAssignabilityCheck
         cap {
-            packageName 'applet'
+            packageName 'openpgpcard'
             version '0.1'
             aid '01:02:03:04:05:06:07:08:09'
             output 'applet.cap'
 
             //noinspection GroovyAssignabilityCheck
             applet {
-                className 'applet.MainApplet'
+                className 'openpgpcard.OpenPGPApplet'
                 aid '01:02:03:04:05:06:07:08:09:01:02'
             }
 
