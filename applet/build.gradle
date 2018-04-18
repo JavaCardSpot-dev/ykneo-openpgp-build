@@ -66,7 +66,7 @@ final def JC304 = libsSdk + '/jc304_kit'
 final def JC305 = libsSdk + '/jc305u1_kit'
 
 // Which JavaCard SDK to use - select
-final def JC_SELECTED = JC304
+final def JC_SELECTED = JC222
 
 javacard {
 
@@ -83,13 +83,15 @@ javacard {
         cap {
             packageName 'openpgpcard'
             version '0.1'
-            aid '01:02:03:04:05:06:07:08:09'
-            output 'applet.cap'
+            //aid '01:02:03:04:05:06:07:08:09'
+            aid 'D2:76:00:01:24:01:02:00:00:00'
+            output 'openpgpcard.cap'
 
             //noinspection GroovyAssignabilityCheck
             applet {
                 className 'openpgpcard.OpenPGPApplet'
-                aid '01:02:03:04:05:06:07:08:09:01:02'
+                aid 'D2:76:00:01:24:01:02:00:00:00:00:00:00:01:00:00'
+                //aid '01:02:03:04:05:06:07:08:09:01:02'
             }
 
             //noinspection GroovyAssignabilityCheck
